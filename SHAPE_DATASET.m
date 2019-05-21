@@ -107,7 +107,7 @@ for m=1:M   %accross all dimensions
     
     for n=1:H  %across all quantization bins
         
-        q=ceil(distribution_objective(n)*N); 
+        q=ceil(distribution_objective(n,m)*N); 
         
         z=(m-1)*H+n;%2d to 1d
         

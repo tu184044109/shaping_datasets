@@ -128,9 +128,8 @@ for i=1:M
         q=ceil(distribution_objective(n,i)*N);%required number of data in this bin
         line([n-0.5 n+0.5],[q q],'Color','r', 'LineWidth', 3);%new setlevel
     end
-    leg1 = legend('combined_8k', 'yt_ugc');
-    set(leg1, 'Interpreter', 'latex');
-    set(leg1, 'FontSize', 14);
+    leg1 = legend({'combined_8k', 'yt_ugc'}, 'FontSize', 14);
+    set(leg1, 'interpreter', 'latex');
     hold off;
     
 end
@@ -182,7 +181,7 @@ for i=1:M
 
     hold off;
     
-    legend('sampled_2k', 'yt_ugc', 'FontSize', 14, 'Interpreter', 'latex');
+    legend('sampled_2k', 'yt_ugc','FontSize', 14, 'Interpreter', 'latex');
 
     
 end
